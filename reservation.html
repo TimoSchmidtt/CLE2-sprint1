@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar p-1" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand logo">
+            <a class="navbar-item" href="index.html">
+                <img src="images/logo.png">
+                <p>Cupcake</p>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="reservation.html">
+                    Reservations
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-body">
+            <h1 class="title is-1">Reservations</h1>
+            <p id="paragraph">Order your pastries here.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="section pt-0">
+            <form action="order.html">
+                <!-- Current Product -->
+                <label class="label">Pastry</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="product-selection">
+                            <option value=0>Petite Bliss Bites</option>
+                            <option value=1>Cocoa Delight Burst</option>
+                            <option value=2>Golden Symphony</option>
+                            <option value=3>Symphony of Sweet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box calendar-body mt-2">
+                    <div class="calendar-top">
+                        <div id="calendar-month">
+                            <p>Month Year</p>
+                        </div>
+                        <div id="calendar-navigation">
+                            <span id="calendar-prev" class="calendar-nav">&#8592;</span>
+                            <span id="calendar-next" class="calendar-nav">&#8594;</span>
+                        </div>
+                    </div>
+                    <ul class="calendar-weekdays">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul id="calendar-dates"></ul>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link is-light">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script src="javascript/reservation.js"></script>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar p-1" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand logo">
+            <a class="navbar-item" href="index.html">
+                <img src="images/logo.png">
+                <p>Cupcake</p>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="reservation.html">
+                    Reservations
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-body">
+            <h1 class="title">Welcome to Cupcake!</h1>
+            <p>Immerse yourself in a symphony of flavors, where each cupcake is a masterpiece, and every cake is a work
+                of
+                art. From classic favorites that bring back nostalgic memories to innovative creations that push the
+                boundaries of sweetness, our menu is a testament to our passion for baking. Our team of skilled bakers
+                combines the finest ingredients with a dash of creativity, pouring love and dedication into each batter
+                and
+                frosting swirl. Every treat that leaves our ovens is a testament to our commitment to quality and the
+                pursuit of perfection.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="columns section pt-0">
+            <div class="column product">
+                <div class="top-row">
+                    <h2 class="title is-2">Petite Bliss Bites</h2>
+                    <p>"Petite Bliss Bites" redefine the art of indulgence in a single, delightful cupcake. Each bite
+                        unveils a symphony of
+                        flavors, a miniature masterpiece crafted with precision and love. From its heavenly swirls to
+                        the
+                        perfect balance of
+                        sweetness, these cupcakes encapsulate pure bliss in every petite package, making every moment a
+                        celebration of sweetness
+                        and joy.</p>
+                </div>
+                <div class="bottom-row">
+                    <img src="images/cupcake.jpg" class="image is-square pt-0 pb-3">
+                    <a class="button is-link" href="reservation.html?product=petite">Order</a>
+                </div>
+            </div>
+            <div class="column product">
+                <div class="top-row">
+                    <h2 class="title is-2">Cocoa Delight Burst</h2>
+                    <p>Indulge in the decadent allure of "Cocoa Delight Burst," a muffin that transcends ordinary
+                        cravings.
+                        With each bite,
+                        experience an explosion of rich cocoa flavors harmoniously blended into a moist, velvety
+                        texture.
+                        This muffin is a
+                        symphony of delight, promising a burst of chocolatey ecstasy that lingers on the palate,
+                        creating an
+                        irresistible treat
+                        for the senses.</p>
+                </div>
+                <div class="bottom-row">
+                    <img src="images/muffin.jpg" class="image is-square pt-0 pb-3">
+                    <a class="button is-link" href="reservation.html?product=cocoa">Order</a>
+                </div>
+            </div>
+            <div class="column product">
+                <div class="top-row">
+                    <h2 class="title is-2">Golden Symphony</h2>
+                    <p>"Golden Symphony" is not just an apple pie; it's a culinary masterpiece that harmonizes the
+                        essence
+                        of orchard-fresh
+                        apples with a golden, flaky crust. The symphony of flavors unfolds with each slice, revealing
+                        the
+                        perfect balance of
+                        sweetness and spice, creating a tantalizing dance on the taste buds. With its golden allure and
+                        timeless appeal, "Golden
+                        Symphony" is a delectable ode to the artistry of apple pie perfection.</p>
+                </div>
+                <div class="bottom-row">
+                    <img src="images/pie.jpg" class="image is-square pt-0 pb-3">
+                    <a class="button is-link" href="reservation.html?product=golden">Order</a>
+                </div>
+            </div>
+            <div class="column product">
+                <div class="top-row">
+                    <h2 class="title is-2">Symphony of Sweet</h2>
+                    <p>"Symphony of Sweet" is more than just a cake; it's a culinary masterpiece that orchestrates a
+                        harmonious blend of
+                        flavors, creating a symphony of sweetness that captivates the senses. With each layer, this cake
+                        weaves together the
+                        velvety richness of chocolate, the delicate notes of vanilla, and the subtle undertones of
+                        decadent
+                        frosting. Indulge in
+                        a slice, and let the "Symphony of Sweet" transport you to a world where every bite is a
+                        crescendo of
+                        delight.</p>
+                </div>
+                <div class="bottom-row">
+                    <img src="images/cake.jpg" class="image is-square pt-0 pb-3">
+                    <a class="button is-link" href="reservation.html?product=symphony">Order</a>
+                </div>
+            </div>
+        </div>
+
+        <form class="section pt-0" action="thankyoumessage.html">
+            <h3 class="title is-3">Send us a message!</h3>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Name" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="Email" value="" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>General</option>
+                            <option>Suggestion</option>
+                            <option>Issue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox" checked="true"> <!-- *evil laughter* -->
+                        I want to sign up for the newsletter.
+                    </label>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        © 2023 Cupcake. All rights reserved.
+    </footer>
+</body>
+
+</html>

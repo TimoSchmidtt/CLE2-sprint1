@@ -1,0 +1,21 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+main{
+    margin: 0 auto;
+}
+.logo{
+    border-radius: 15px;
+    background-color: pink;
+}
+.logo :hover{
+    background-color: pink;
+}
+.food-img{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
